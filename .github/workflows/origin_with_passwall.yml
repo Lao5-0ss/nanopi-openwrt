@@ -47,7 +47,7 @@ jobs:
         run: |
           cd friendlywrt-h5
           rm -f .repo/manifests/h5.xml
-          cp ../19s_master_config.xml .repo/manifests/h5.xml
+          cp ../JUNK/19s_master_config.xml .repo/manifests/h5.xml
           repo sync -c  --no-clone-bundle
           sed -i 's/dnsmasq /dnsmasq-full /' friendlywrt/include/target.mk
           #curl 'https://raw.githubusercontent.com/friendlyarm/friendlywrt_device_h5/286a065e7832458ccd17a5d4cf4dd52a547fa34d/h5/nanopi_r1s.mk' > device/friendlyelec/h5/nanopi_r1s.mk
